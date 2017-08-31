@@ -1,9 +1,9 @@
 var VideoList = (props) => {
-  console.log(props);
   return (
+    //{console.log(props)};
     <ul>
-      {props.videos.map((video, index) => 
-        <VideoListEntry video ={video} key={index}/>
+      {props.videos.map(video => 
+        <VideoListEntry video ={video} key={video.id.videoId} click={props.click}/>
       )}
     </ul>
   );
