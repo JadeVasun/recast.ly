@@ -1,7 +1,7 @@
 var VideoList = (props) => {
   return (
     //{console.log(props)};
-    <ul>
+    <ul className = "video-list">
       {props.videos.map(video => 
         <VideoListEntry video ={video} key={video.id.videoId} click={props.click}/>
       )}
